@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
+    <title>sound#</title>
+</head>
+
+<body>
+          <div class="app">
+            <h1 class="fancyText">sound#</h1>
+ 
+            <h3 style="color: white;">tap(touch-screen) or click on the colors below to make some music.</h3>
+         
+            <div class="dividerLine"></div>
+
+            <div class="p1">single notes + sounds</div>
+            
+            <div class="titleBar">
+            
+                                <div class="padTitles">
+                                    <p>kicks</p> 
+                                </div>
+
+                                <div class="padTitles">
+                                    <p>bass</p> 
+                                </div>
+
+                                <div class="padTitles">
+                                    <p>piano</p> 
+                                </div>
+
+                                <div class="padTitles">
+                                    <p>strings</p> 
+                                </div>
+
+                                <div class="padTitles">
+                                    <p>pads</p> 
+                                </div>
+
+                                <div class="padTitles">
+                                    <p>crash</p> 
+                                </div>
+
+            </div>
+               
+
+           <!-- HIGHEST OPACITY/HIGHEST NOTES -->
+            <div class="pads">            
+<!-- DIVS USING THE "SOUND" CLASS, THIS CLASS ONLY PLAYS THE SOUND ONE TIME -->
+                <div class="pad2">
+                    <audio class="sound" src="./sounds2/kick1.mp3"></audio>
+                </div>
+
+                <div class="pad3">
+                    <audio class="sound" src="./sounds2/bass1.mp3"></audio>
+                </div>
+
+                <div class="pad4">                    
+                    <audio class="sound" src="./sounds2/piano1.mp3"></audio>
+                </div>
+
+                <div class="pad1">                   
+                    <audio class="sound" src="./sounds2/string1.mp3"></audio>
+                </div>
+
+                <div class="pad6">                   
+                    <audio class="sound" src="./sounds2/pad1.mp3"></audio>
+                </div>
+
+                <div class="pad5">                    
+                    <audio class="sound" src="./sounds2/crash1.mp3"></audio>
+                </div>    
+          
+            </div>
+
+<!-- MEDIUM OPACITY/MIDRANGE NOTES -->
+            <div class="pads noteRow2"> 
+
+                <div class="pad2">
+                    <audio class="sound" src="./sounds2/kick2.mp3"></audio>
+                </div>
+
+                <div class="pad3">
+                    <audio class="sound" src="./sounds2/bass2.mp3"></audio>
+                </div>
+
+                <div class="pad4">
+                    <audio class="sound" src="./sounds2/piano2.mp3"></audio>
+                </div>
+
+                <div class="pad1">
+                    <audio class="sound" src="./sounds2/string2.mp3"></audio>
+                </div>
+
+                <div class="pad6">
+                    <audio class="sound" src="./sounds2/pad2.mp3"></audio>
+                </div>
+
+                <div class="pad5">
+                    <audio class="sound" src="./sounds2/crash2.mp3"></audio>
+                </div>
+          
+            </div>
+      
+<!-- LOWER OPACITY/LOWER NOTES -->
+            <div class="pads noteRow3">
+
+                <div class="pad2">                    
+                    <audio class="sound" src="./sounds2/kick3.mp3"></audio>
+                </div>
+
+                <div class="pad3">
+                    <audio class="sound" src="./sounds2/bass3.mp3"></audio>
+                </div>
+
+                <div class="pad4">
+                    <audio class="sound" src="./sounds2/piano3.mp3"></audio>
+                </div>
+
+                <div class="pad1">
+                    <audio class="sound" src="./sounds2/string3.mp3"></audio>
+                </div>
+
+                <div class="pad6">
+                    <audio class="sound" src="./sounds2/pad3.mp3"></audio>
+                </div>
+
+                <div class="pad5">
+                    <audio class="sound" src="./sounds2/crash3.mp3"></audio>
+                </div>
+          
+            </div>
+
+<!-- LOWEST OPACITY/LOWEST NOTES -->
+            <div class="pads noteRow4">
+
+                <div class="pad2">
+                    <audio class="sound" src="./sounds2/kick4.mp3"></audio>
+                </div>
+
+                <div class="pad3">
+                    <audio class="sound" src="./sounds2/bass4.mp3"></audio>
+                </div>
+                
+                <div class="pad4">                   
+                    <audio class="sound" src="./sounds2/piano4.mp3"></audio>
+                </div>
+               
+                <div class="pad1">
+                    <audio class="sound" src="./sounds2/string4.mp3"></audio>
+                </div>
+
+                <div class="pad6">
+                    <audio class="sound" src="./sounds2/pad4.mp3"></audio>
+                </div>
+
+                <div class="pad5">
+                    <audio class="sound" src="./sounds2/crash4.mp3"></audio>
+                </div>
+          
+            </div>        
+
+
+<!-- FIXED: HAD TO CREATE (SOUNDS2) CLASS IN JS FILE :::FOR SOME REASON THESE WONT LOOP UNLESS THE FIRST ONES FROM ABOVE ARE -->
+
+            <div class="dividerLine"></div>
+            <div class="p1">loops + loop controls</div>
+            <div class="padsBorder">
+                
+                <div class="pads2">
+                                                
+                    <div id="loop1" onclick="showGlow()">
+                        <audio id="volControl1" loop class="sound2" src="./sounds2/kickClapLoop1.mp3" ></audio>
+                    </div>
+
+                    <div id="loop2" onclick="showGlow2()">
+                        <audio id="volControl2" loop class="sound2" src="./sounds2/pianoLoop.mp3"></audio>
+                    </div>
+
+                    <div id="loop3" onclick="showGlow3()">
+                        <audio id="volControl3" loop class="sound2" src="./sounds2/panFluteLoop.mp3"></audio>
+                    </div>
+
+                    <div id="loop4" onclick="showGlow4()">
+                        <audio id="volControl4" loop class="sound2" src="./sounds2/kickClapLoop2.mp3"></audio>
+                    </div>
+
+                    <div id="loop5" onclick="showGlow5()">
+                        <audio id="volControl5" loop class="sound2" src="./sounds2/pianoLoop2.mp3"></audio>
+                    </div>
+
+                    <div id="loop6" onclick="showGlow6()">
+                        <audio id="volControl6" loop class="sound2" src="./sounds2/roboticStingsLoop.mp3"></audio>
+                    </div>
+
+                </div>                
+
+            </div>
+
+                <!-- VOLUME AND PITCH/SPEED SLIDERS -->
+                <div class="slideContainer">
+                    <input type="range" min="0" max="100" value="42" class="slider" id="myRange">
+                    <p class="p1" style="color: white;">loop volume<span id="value"></span></p>
+
+                    <input type="range" min="25" max="200" value="42" class="slider2" id="myRange2">
+                    <p class="p1" style="color: white;">loop pitch/speed<span id="value2"></span></p>
+                </div>
+
+            </div>
+
+
+
+            
+
+         
+
+              
+                </div>
+
+
+
+
+
+               
+
+
+
+  
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+<!-- VOLUME SLIDER END -->
+
+
+
+
+
+  <script src="./index.js"></script>
+  <script src="./soundScript.js"></script>
+  <script src="app.js"></script>
+  
+    
+</body>
+</html>

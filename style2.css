@@ -1,0 +1,110 @@
+.slideContainer {
+	width: 40%;
+	margin-top: 2vw;
+	margin-right: 4vw;
+	margin-bottom: 1px;
+	float: right;
+	align-items: center;
+}
+  
+.slider {
+	display: inline-block;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 2vw;
+	background: linear-gradient(90deg, rgb(3, 158, 29) 5%, rgb(78, 78, 78) 0%);
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	border-radius: 3px;
+	box-shadow: 0px 1px 10px 1px rgba(255, 255, 255, 0.651);
+}
+  
+  
+  .slider:hover {
+	opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1vw;
+	height: 3.5vw;
+	background: white;
+	cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 1vw;
+	height: 3.5vw;
+	background: rgb(146, 146, 146);
+	cursor: pointer;
+  }
+
+
+
+/* PITCH/SPEED CONTROL */
+.slider2 {
+	display: inline-block;
+	-webkit-appearance: none;
+	width: 100%;
+	height: 2vw;
+	background: linear-gradient(90deg,  rgb(248, 224, 5) 0%), rgb(33, 1, 109) 5%;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+	border-radius: 3px;
+	box-shadow: 0px 1px 10px 1px rgba(255, 255, 255, 0.651);
+}
+  
+  .slider2:hover {
+	opacity: 1;
+}
+  
+  .slider2::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1vw;
+	height: 3.5vw;
+	background: white;
+	cursor: pointer;
+}
+  
+  .slider2::-moz-range-thumb {
+	width: 1vw;
+	height: 3.5vw;
+	background: rgb(146, 146, 146);
+	cursor: pointer;
+}
+
+
+/* END PITCH/SPEED CONTROL */
+  .audio{
+	  width: 700px;
+	  height: 300px;
+}
+
+
+/*THIS MAKES IT SO DISPLAY'S OVER 800PX HAVE A MAX PAD WIDTH OF 80% */
+@media only screen and (max-width: 1000px) {
+
+
+	.slideContainer{
+		margin-top:5vw;
+	}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+	.slider  {
+	height:3vw;
+}
+
+	.slider2  {
+	height:3vw;
+}
+
+}

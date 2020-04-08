@@ -1,0 +1,518 @@
+@-webkit-keyframes pulse {
+    0% { box-shadow:0 0 8px #0dda17, inset 0 0 8px #0dda17; }
+    50% { box-shadow:0 0 20px #0dda17, inset 0 0 14px #0dda17; }
+    100% { box-shadow:0 0 8px #0dda17, inset 0 0 8px #0dda17; }
+  }
+ 
+  @-webkit-keyframes pulse2 {
+    0% { box-shadow:0 0 8px #d60c93, inset 0 0 8px #d60c93; }
+    50% { box-shadow:0 0 20px #d60c93, inset 0 0 14px #d60c93; }
+    100% { box-shadow:0 0 8px #d60c93, inset 0 0 8px #d60c93; }
+  }
+
+  @-webkit-keyframes pulse3 {
+    0% { box-shadow:0 0 8px #51c8f7, inset 0 0 8px #51c8f7; }
+    50% { box-shadow:0 0 20px #51c8f7, inset 0 0 14px #51c8f7; }
+    100% { box-shadow:0 0 8px #51c8f7, inset 0 0 8px #51c8f7; }
+  }
+
+  @-webkit-keyframes pulse4 {
+    0% { box-shadow:0 0 8px #8b26e9, inset 0 0 8px #8b26e9; }
+    50% { box-shadow:0 0 20px #8b26e9, inset 0 0 14px #8b26e9; }
+    100% { box-shadow:0 0 8px #8b26e9, inset 0 0 8px #8b26e9; }
+  }
+
+  @-webkit-keyframes pulse5 {
+    0% { box-shadow:0 0 8px #d3d160, inset 0 0 8px #d3d160; }
+    50% { box-shadow:0 0 20px #d3d160, inset 0 0 14px #d3d160; }
+    100% { box-shadow:0 0 8px #d3d160, inset 0 0 8px #d3d160; }
+  }
+  
+  @-webkit-keyframes pulse6 {
+    0% { box-shadow:0 0 8px #f89705, inset 0 0 8px #f89705; }
+    50% { box-shadow:0 0 20px #f89705, inset 0 0 14px #f89705; }
+    100% { box-shadow:0 0 8px #f89705, inset 0 0 8px #f89705; }
+  }
+
+  @-webkit-keyframes loopPulse1 {
+    0% { box-shadow:0 0 8px  #fa0303, inset 0 0 8px  #fa0303; }
+    50% { box-shadow:0 0 50px  #fa0303, inset 0 0 14px  #fa0303; }
+    100% { box-shadow:0 0 8px  #fa0303, inset 0 0 8px  #fa0303; }
+  }
+
+
+  @-webkit-keyframes loopPulse2 {
+    0% { box-shadow:0 0 8px #00ffd5, inset 0 0 8px #00ffd5; }
+    50% { box-shadow:0 0 50px #00ffd5, inset 0 0 14px #00ffd5; }
+    100% { box-shadow:0 0 8px #00ffd5, inset 0 0 8px #00ffd5; }
+  }
+
+  @-webkit-keyframes loopPulse3 {
+    0% { box-shadow:0 0 8px #f8f8f8, inset 0 0 8px #f8f8f8; }
+    50% { box-shadow:0 0 50px #f8f8f8, inset 0 0 14px #f8f8f8; }
+    100% { box-shadow:0 0 8px #f8f8f8, inset 0 0 8px #f8f8f8; }
+  }
+
+  @-webkit-keyframes loopPulse4 {
+    0% { box-shadow:0 0 8px #f8f8f8, inset 0 0 8px #f8f8f8; }
+    50% { box-shadow:0 0 50px #f8f8f8, inset 0 0 14px #f8f8f8; }
+    100% { box-shadow:0 0 8px #f8f8f8, inset 0 0 8px #f8f8f8; }
+  }
+ 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;    
+ 
+}
+
+html{
+    background-color: black;  
+    
+}
+
+
+.app{
+    justify-content: space-between;
+    align-self: center;
+    background-color: rgb(0, 0, 0);
+    opacity: 90%;
+    padding: 1% 0% 5%;
+    height: 100%;
+  
+}
+
+
+span{
+    opacity: 0;
+    transition: all 3s ease;
+    transform: translateY(-40px);
+    display: inline-block;
+}
+
+span.fade {
+    opacity: .9;
+    transform: translateY(-1px);
+    color: rgb(255, 255, 255);
+}
+
+
+h1{
+    padding:2vh;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 217, 255);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    font-style: italic;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    color: rgba(255, 255, 255, 0.486);
+    z-index: 5;
+}
+
+header p {
+    font-size: 20px;
+    color: white;
+}
+
+
+.padTitles{
+    background-color:transparent;
+    display: flex;
+    height:50%;
+    border-radius:25px;
+    text-align: center;  
+    /* width: 80%;
+    margin: auto; */
+}
+
+.padTitles p{
+    color:white;
+    font-size: 1.5vw;
+    
+}
+
+.titleBar{
+    font-style: italic;
+    display: flex;
+    margin-bottom: auto;
+    margin: .5vw;
+    margin: auto;
+    width: 90%;
+
+}
+
+.titleBar > div {
+    display: flex;
+    height: 3vh;
+    /* width: 50%; */
+    flex: 1;
+    border-radius: 5%;
+    margin: .7vw; 
+    justify-content: center;
+
+      
+   
+}
+
+
+
+.pads{
+    /* width: 100%; */
+  
+    display: flex;
+    margin-bottom: auto;
+    margin: .5vw;
+    margin: auto;
+    width: 90%;
+}
+
+
+
+.pads > div {
+    
+    display: flex;
+    height: 13vh;
+    width: 100%;
+    flex: 1;
+    border-radius: 5%;
+    margin: .7vw;    
+   
+}
+
+.noteRow2{
+    opacity: 70%;
+}
+.noteRow3{
+    opacity: 40%;
+}
+.noteRow4{
+    opacity: 20%;
+}
+
+.pads2{
+    padding: 5px;
+    display:inline-grid;
+    grid-template-columns: auto auto auto;
+    margin: .5vw;    
+    margin-bottom: 1px;
+    border: 1px solid rgba(82, 80, 80, 0.932);    
+}
+
+.pads2 > div {
+    height: 9vh;
+    width: 12vw;
+    border-radius: 5%;
+    margin: .7vw;
+}
+
+.p1 {
+    color: rgba(255, 255, 255, 0.486);
+    font-size: 1.3vw;
+    margin: .5vw;
+    margin-bottom: 1vw;
+    padding-left: 1vw;
+    z-index: 2;
+    font-style: italic;
+}
+
+.p2 {
+    background-color: white;
+    font-size: 16px;
+    opacity:.5;
+    display: flex;
+    margin: .5vw;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    font-style: italic;
+}
+
+.dividerLine{
+    width: 80%;
+    height: 1px;
+    background-color:rgba(82, 80, 80, 0.932);
+    align-self: center;
+    margin: auto;
+    margin-bottom: 1vw;
+     margin-top: 2vw;
+}
+
+/* ACTS AS A BORDER TO HOLD TEXT CLOSE TO ELEMENTS */
+.padsBorder {
+    width: 50%;
+    display: inline-block;
+}
+
+.pad1{
+    background-color:transparent;
+    width:100px;
+    height:100px;
+    border-radius:25px;
+    background-color: #067c0c86;
+    box-shadow: 0 0 8px #0dda17, inset 0 0 8px #0dda17;
+    -webkit-animation: pulse 3s linear 1s infinite;
+}
+
+.pad2{
+    background-color:transparent;
+    width:100px;
+    height:100px;
+    border-radius:25px;
+    background-color: #80075786;
+    box-shadow: 0 0 8px#d60c93, inset 0 0 8px #d60c93;
+    -webkit-animation: pulse2 3s linear 1s infinite;
+}
+
+.pad3{
+    background-color:transparent;
+    width:100px;
+    height:100px;
+    border-radius:25px;
+    background-color: #83510573;
+    box-shadow: 0 0 8px#f89705, inset 0 0 8px #f89705;
+    -webkit-animation: pulse6 3s linear 1s infinite;
+}
+
+
+
+.pad4{
+    background-color:transparent;
+    width:100px;
+    height:100px;
+    border-radius:25px;
+    background-color: #77750877;
+    box-shadow: 0 0 8px#d3d160, inset 0 0 8px #d3d160;
+    -webkit-animation: pulse5 2s linear 1s infinite;
+}
+
+.pad5{
+    background-color:transparent;
+    width:100px;
+    height:100px;
+    border-radius:25px;
+    background-color: #460a7e91;
+    box-shadow: 0 0 8px#8b26e9, inset 0 0 8px #8b26e9;
+    -webkit-animation: pulse4 3s linear 1s infinite;
+}
+
+.pad6{
+    background: #51c8f7;
+    background-color:transparent;
+    width:100px;
+    height:100px;
+    border-radius:25px;
+    background-color: #085b7c6e;
+    box-shadow: 0 0 8px#51c8f7, inset 0 0 8px #51c8f7;
+    -webkit-animation: pulse3 4s linear 1s infinite;
+}
+
+/* THIS IS SUUUPPPER IMPORTANT, FOR THIS TOGGLE TO WORK, IDS NEEDED TO BE USED, 
+AND I HAD TO SPECIFY WITH #LOOP1.LOOPPAD */
+
+#loop1{
+    background-color:transparent;
+    height: 9vh;
+    width: 12vw;
+    border-radius: 5%;
+    margin: .7vw;
+    background-color: #550101;
+    box-shadow: 0 0 8px#fa0303, inset 0 0 8px #fa0303;
+    opacity: 0.3;
+    -webkit-animation: loopPulse1 3s linear 1s infinite;
+}
+
+#loop1.loopPad{
+  opacity: 1; 
+}
+
+#loop2{
+    background-color:transparent;
+    height: 9vh;
+    width: 12vw;
+    border-radius: 5%;
+    margin: .7vw;
+    background-color: #fdfdfd5b;
+    box-shadow: 0 0 8px#fdfdfd, inset 0 0 8px #fdfdfd;
+    opacity: 0.3;
+    -webkit-animation: loopPulse3 3s linear 1s infinite;
+}
+
+/* INSTEAD OF #LOOP2.LOOPPAD, WE COULD PUT #LOOP2.LOOPPAD2 TO MAKE A NEW CLASS, 
+TO SPECIFY DIFFERNT ATTRIBUTES, BUT SINCE ALL PADS JUST NEED THEIR OPACITY TURNED UP, 
+WE CAN STICK WITH JUST THE LOOPPAD CLASS */
+
+#loop2.loopPad{
+  opacity: 1; 
+  -webkit-animation: loopPulse3 3s linear 1s infinite;
+}
+
+#loop3{
+    background-color:transparent;
+    height: 9vh;
+    width: 12vw;
+    border-radius: 5%;
+    margin: .7vw;
+    background-color: #00ffd567;
+    box-shadow: 0 0 8px#00ffd5, inset 0 0 8px #00ffd5;
+    opacity: 0.3;
+    -webkit-animation: loopPulse2 3s linear 1s infinite;
+}
+
+#loop3.loopPad{
+  opacity: 1; 
+}
+
+#loop4{
+    background-color:transparent;
+    height: 9vh;
+    width: 12vw;
+    border-radius: 5%;
+    margin: .7vw;
+    background-color: #550101;
+    box-shadow: 0 0 8px#fa0303, inset 0 0 8px #fa0303;
+    opacity: 0.3;
+    -webkit-animation: loopPulse1 3s linear 1s infinite;
+}
+
+#loop4.loopPad{
+  opacity: 1; 
+  -webkit-animation: loopPulse1 .5s linear 1s infinite;
+}
+
+#loop5{
+    background-color:transparent;
+    height: 9vh;
+    width: 12vw;
+    border-radius: 5%;
+    margin: .7vw;
+    background-color: #fdfdfd5b;
+    box-shadow: 0 0 8px#fdfdfd, inset 0 0 8px #fdfdfd;
+    opacity: 0.3;
+    -webkit-animation: loopPulse3 3s linear 1s infinite;
+}
+
+#loop5.loopPad{
+  opacity: 1; 
+  -webkit-animation: loopPulse3 .5s linear 1s infinite;
+}
+
+
+#loop6{
+    background-color:transparent;
+    height: 9vh;
+    width: 12vw;
+    border-radius: 5%;
+    margin: .7vw;
+    background-color: #00ffd567;
+    box-shadow: 0 0 8px#00ffd5, inset 0 0 8px #00ffd5;
+    opacity: 0.3;
+    -webkit-animation: loopPulse2 3s linear 1s infinite;
+}
+
+#loop6.loopPad{
+  opacity: 1; 
+  -webkit-animation: loopPulse2 .5s linear 1s infinite;
+}
+
+@keyframes jump{
+     0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+/* ALLOWS MENU BUTTON TO SPIN USING THE ANIMATION ATTRIBUTE */
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+/* ----------------END MENU BUTTON SPIN--------------------- */
+
+
+/*THIS MAKES IT SO DISPLAY'S OVER 800PX HAVE A MAX PAD WIDTH OF 80% */
+@media only screen and (max-width: 1000px) {
+
+.pads{
+    /* display: flex;
+    margin-bottom: auto;
+    margin: .5vw;
+    margin: auto; */
+    width: 100%;
+    
+}
+.pads> div{
+    height: 10vh
+}
+.titleBar{
+    width: 100%;
+}
+
+.app{
+    height: 100vh;
+}
+
+.padsBorder{   
+     margin-top: 3vw;
+}
+
+}
+
+
+
+
+
+    @media only screen and (max-width: 600px) {
+        .pads > div {            
+            margin: 5px;            
+        }
+        .pads .p1{
+            font-size: 4vw;
+        }
+
+        .padTitles p{
+            color:white;
+            font-size: 2.7vw;
+        }
+
+        .p1 {            
+            font-size: 3vw;           
+        }
+        h1{
+            font-size: 5vw;
+        }
+        h3{
+            font-size: 3vw;
+        }
+
+
+      }
+
+
